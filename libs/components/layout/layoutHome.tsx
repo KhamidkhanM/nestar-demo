@@ -1,7 +1,7 @@
 import { Stack } from "@mui/material";
 import Head from "next/head";
 
-const withLayoutMain = (Component: any) => {
+const withLayoutHome = (Component: any) => {
   return (props: any) => {
     return (
       <>
@@ -20,4 +20,4 @@ const withLayoutMain = (Component: any) => {
   };
 };
 
-export default withLayoutMain;
+export default withLayoutHome;

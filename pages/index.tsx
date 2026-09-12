@@ -1,6 +1,5 @@
 import { Box, Container, Stack } from "@mui/material";
-import { brown, green } from "@mui/material/colors";
-import withLayoutMain from "../libs/components/layout/layoutHome";
+import withLayoutHome from "../libs/components/layout/layoutHome";
 import { NextPage } from "next";
 
 const Home: NextPage = () => {
@@ -18,4 +17,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default withLayoutMain(Home);
+export default withLayoutHome(Home);
