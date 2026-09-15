@@ -1,7 +1,15 @@
-import withLayoutBasic from "../../libs/components/layout/layoutBasic";
+import withLayoutBasic from "@/libs/components/layout/LayoutBasic";
+import useDeviceDetect from "@/libs/hooks/useDeviceDetect";
+import { Container, Stack } from "@mui/material";
 
 const PropertyDetail = () => {
-  return <div>PROPERTY DETAIL</div>;
+  const device = useDeviceDetect();
+
+  if (device === "mobile") {
+    return <Stack>PROPERTY DETAIL MOBILE</Stack>;
+  } else {
+    return <Container>PROPERTY DETAIL</Container>;
+  }
 };
 
 export default withLayoutBasic(PropertyDetail);
