@@ -1015,7 +1015,8 @@
 						}
 					}
 					.card-wrapper {
-						width: 1174px;
+						width: 100%;
+						max-width: 1174px;
 						height: 280px;
 						display: flex;
 						flex-direction: row;

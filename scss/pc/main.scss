@@ -104,7 +104,8 @@
 				position: relative;
 				margin-top: 615px;
 				padding: 16px 29px;
-				width: 1094px;
+				width: 100%;
+				max-width: 1094px;
 				height: 96px;
 				display: flex;
 				flex-direction: row;
@@ -366,7 +367,9 @@
 		flex-direction: row;
 		background: #181a20;
 		.footer-container {
-			width: 1300px;
+			width: 100%;
+			max-width: 1300px;
+			padding: 0 20px;
 			height: auto;
 			margin: 0 auto;
 			.main {
