@@ -3,6 +3,7 @@ import { Stack, Box } from "@mui/material";
 import WestIcon from "@mui/icons-material/West";
 import EastIcon from "@mui/icons-material/East";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper";
 import TrendPropertyCard from "./TrendPropertyCard";
 
 const TrendProperties = () => {
@@ -31,6 +32,7 @@ const TrendProperties = () => {
             <Box className={"empty-list"}>Trends Empty</Box>
           ) : (
             <Swiper
+              modules={[Navigation, Pagination]}
               className={"trend-property-swiper"}
               slidesPerView={"auto"}
               spaceBetween={15}

@@ -997,6 +997,7 @@
 					align-items: center;
 					justify-content: space-between;
 					.switch-btn {
+						flex-shrink: 0;
 						width: 53px;
 						height: 53px;
 						display: flex;
@@ -1015,7 +1016,8 @@
 						}
 					}
 					.card-wrapper {
-						width: 100%;
+						flex: 1;
+						min-width: 0;
 						max-width: 1174px;
 						height: 280px;
 						display: flex;
